@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>터치 연습 · Touch Practice</title>
+<meta name="description" content="터치, 길게 누르기, 드래그를 연습하는 숫자 짝 맞추기 게임. Practice tap, long press and drag with a number-matching game.">
+<style>
+  :root { --bg:#f4f1ea; --fg:#1d1d1d; --muted:#555; --card:#fff; --accent:#1e5aa8; --line:#d8d3c7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16181c; --fg:#ececec; --muted:#a8acb3; --card:#1f2228; --accent:#7fb2ff; --line:#363a42; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); line-height:1.75; font-size:18px;
+         font-family:-apple-system,"Segoe UI","Noto Sans KR","Malgun Gothic",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:24px 0 6px; }
+  p, li { margin:6px 0; }
+  .sub { color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:4px 20px 20px; margin-top:16px; }
+  .chips { display:flex; gap:10px; margin:12px 0; flex-wrap:wrap; }
+  .chip { padding:6px 14px; border-radius:999px; border:2px solid #555; font-weight:700; }
+  .w { background:#fff; color:#222; } .y { background:#ffd84d; color:#222; border-color:#8a5a2b; border-width:4px; }
+  .g { background:#7ed67e; color:#222; border-color:#1b5e20; }
+  a { color:var(--accent); }
+  .links { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
+  .links a { padding:10px 18px; border:1.5px solid var(--accent); border-radius:999px; text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>터치 연습 · Touch Practice</h1>
+  <p class="sub">같은 숫자 두 장을 찾아 없애며 손가락 조작을 연습하는 게임<br>
+  A number-matching game for practicing tap, long press and drag</p>
+
+  <div class="chips" aria-label="카드 종류">
+    <span class="chip w">흰 · 터치 / Tap</span>
+    <span class="chip y">노랑 · 길게 누르기 / Long press</span>
+    <span class="chip g">초록 · 드래그 / Drag</span>
+  </div>
+
+  <section class="card" lang="ko">
+    <h2>소개</h2>
+    <ul>
+      <li>흰 카드는 <b>터치</b>, 노란 카드는 <b>길게 누르기</b>, 초록 카드는 <b>드래그</b>로 같은 숫자 두 장을 없애면 성공입니다.</li>
+      <li>연습 3종으로 조작을 하나씩 익히고, 1~10단계에서 숫자 범위가 점점 넓어집니다.</li>
+      <li>"계속 도전"은 세 가지 카드가 처음부터 섞여 나오며, 종료 버튼을 누를 때까지 이어집니다.</li>
+      <li>글씨 크기(보통/작게)와 언어(한국어/English)를 바꿀 수 있고, 효과음·진동·카드 떨림 효과는 설정에서 끌 수 있습니다.</li>
+      <li><b>인터넷이 필요 없고, 광고가 없으며, 개인정보를 수집하지 않습니다.</b></li>
+    </ul>
+  </section>
+
+  <section class="card" lang="en">
+    <h2>About</h2>
+    <ul>
+      <li>Clear two cards with the same number: <b>tap</b> white cards, <b>press and hold</b> yellow cards, and <b>drag</b> green cards.</li>
+      <li>Three practice stages teach each gesture, then Levels 1–10 widen the number range step by step.</li>
+      <li>"Keep Going" mixes all three card types from the start and continues until you press End.</li>
+      <li>Switch text size (Normal/Small) and language (Korean/English). Sound, vibration and card tremble can be turned off in Settings.</li>
+      <li><b>No internet needed, no ads, and no personal data collected.</b></li>
+    </ul>
+  </section>
+
+  <div class="links">
+    <a href="privacy.html">개인정보처리방침 / Privacy Policy</a>
+    <a href="mailto:niho0495@gmail.com">문의 / Contact</a>
+  </div>
+  <p class="sub" style="margin-top:32px">© H Lambda</p>
+</main>
+</body>
+</html>
